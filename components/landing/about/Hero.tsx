@@ -17,12 +17,12 @@ const Hero = () => {
           quality={100}
           style={{ filter: 'brightness(0.5)' }}
         />
-        <div className="absolute inset-0 flex flex-col pl-[20vh] justify-center text-white w-[50%]">
+        <div className="absolute inset-0 flex flex-col px-4 sm:px-8 md:px-8 lg:px-12 justify-center text-white w-[50%]">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0 }}
-            className="text-8xl font-bold mb-4 text-left"
+            className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 text-left"
           >
             Get in Touch with AIBuildIQ
           </motion.h1>
@@ -89,7 +89,7 @@ const Hero = () => {
           <h2 className="text-3xl font-bold mb-8 text-left">Let Us Assist on Your Capital Needs</h2>
           <div className="flex flex-wrap justify-center gap-8">
             <motion.div 
-              className="bg-white p-6 rounded-lg shadow-md"
+              className="bg-white p-6 rounded-lg shadow-md w-[80vw] sm:w-[50vw] md:w-[40vw] lg:w-[30vw]"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
@@ -107,7 +107,7 @@ const Hero = () => {
               </div>
             </motion.div>
             <motion.div 
-              className="bg-white p-6 rounded-lg shadow-md"
+              className="bg-white p-6 rounded-lg shadow-md w-[80vw] sm:w-[50vw] md:w-[40vw] lg:w-[30vw]"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >

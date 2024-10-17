@@ -17,7 +17,7 @@ const Hero = () => {
         quality={100}
         style={{ filter: 'brightness(0.5)' }}
       />
-      <div className="absolute inset-0 flex flex-col pl-[20vh] justify-center  text-white w-[75%]">
+      <div className="absolute inset-0 flex flex-col px-4 sm:px-8 md:px-8 lg:px-12 justify-center  text-white w-[75%]">
         <h2 className="text-4xl font-bold mb-4 text-left">How AIBuildIQ Works</h2>
         <motion.p
           initial={{ opacity: 0, y: 50 }}

@@ -30,9 +30,10 @@ export const Box: React.FC<BoxProps> = ({
         height,
         backgroundColor
       )}
+      style={{ minHeight: 'fit-content' }}
     >
-      <span className="text-4xl font-bold mb-4">"{letter1}"</span>
-      <span className="text-2xl mb-4">"{letter2}"</span>
+      <span className="text-4xl font-bold mb-4 text-center">"{letter1}"</span>
+      <span className="text-2xl mb-4 text-center">"{letter2}"</span>
       <div className="flex flex-wrap gap-2 justify-center">
         {buttons.map((button, index) => (
           <Button key={index} variant={button.variant || "default"}>

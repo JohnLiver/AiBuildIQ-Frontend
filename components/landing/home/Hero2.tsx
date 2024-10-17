@@ -14,7 +14,7 @@ const Hero = () => {
       exit={{ opacity: 0, y: 100 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="relative">
+      <div className="relative h-[90vh]">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -24,15 +24,15 @@ const Hero = () => {
           <Image
             src={headerImage.src}
             alt="header"
-            width={0}
-            height={0}
+            layout="fill"
+            objectFit="cover"
             sizes="100vw"
-            style={{ width: '100%', height: '80vh', clipPath: 'inset(0 0 30% 0)' }}
             className="opacity-50"
+            style={{clipPath: 'inset(0 0 30% 0)'}}
           />
         </motion.div>
         <motion.div 
-          className="absolute inset-0 flex items-end ml-[20vw]"
+          className="absolute inset-0 flex items-end px-4 sm:px-8 md:px-8 lg:px-12"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -44,8 +44,8 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
           >
             <Box
-              width="w-[40vw]"
-              height="h-[50vh]"
+              width=" w-full sm:w-[70vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw]"
+              height="h-auto min-h-[70vh] sm:h-[65vh] md:h-[60vh] lg:h-[55vh]"
               backgroundColor="bg-[#f2f2f2]"
               letter1="Experience the Future of Real Estate Financing with AIBuildIQ"
               letter2="Whether you're a lender seeking quality leads, a broker looking to close deals faster, or a borrower in search of the best loan, AIBuildIQ is the innovative platform that brings simplicity and precision to real estate financing."
